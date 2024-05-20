@@ -1,0 +1,39 @@
+liste=[]
+while True:
+    n=int(input("Entrez un nombre : "))
+    if n == 0:
+        break;
+    else:
+        liste.append(n)
+print(liste)
+for i in range(len(liste)):
+    print("L'index",i,"est : ",liste[i])
+s=0
+for i in range(len(liste)):
+    s+=liste[i]
+print("La somme est : ",s)
+liste2=[]
+for i in range(len(liste)):
+    liste2.append(3*(liste[i]))
+print("La nouvelle liste est : ",liste2)
+print(liste2)
+MAX=liste[0]
+MIN=liste[0]
+if liste[i] > MAX:
+    MAX=liste[i]
+if liste[i] < MIN:
+    MIN=liste[i]
+print("La max est : ",MAX)
+print("Le min est : ",MIN)
+p=0
+for i in range(len(liste)):
+    if i%2==0:
+        p+=1
+print("Le nombre de nombres paires dans la liste est : ",p)
+s=0
+p=0
+for i in range(len(liste)):
+    if i%2!=0:
+        p+=1
+        s+=i
+print("La somme des nombres impairs est : ",s)
